@@ -1,0 +1,274 @@
+
+<!DOCTYPE html>
+
+<html lang="ru">
+<head>
+<meta charset="utf-8"/>
+<title>Услуги</title>
+<style>
+    @media (max-width: 600px) {
+      .grid {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background: #fdfdfd;
+      width: 97%
+    }
+    .grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .card {
+      width: 100%;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      cursor: pointer;
+      position: ;
+    }
+    .card img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+    .info {
+      padding: 10px;
+    }
+    .title {
+      color: #444;
+      margin: 5px 0;
+      font-size: 60px;
+    }
+    .price {
+      font-size: 70px;
+      font-weight: bold;
+    }
+    .description {
+      display: none;
+      padding: 10px;
+      color: #666;
+      background: #fafafa;
+      font-size: 70px;
+    }
+    .main-title {
+      text-align: center;
+      font-weight: bold;
+      font-size: 70px;
+      margin-bottom: 20px;
+    }
+    .vk-button {
+  position: fixed;
+  top: 20px;
+  right: 40px;
+  z-index: 1000;
+    }
+
+    .vk-button:hover {
+  background-color: #3b5d82;
+    }
+    .Lego-City {
+      text-align: center;
+      font-weight: bold;
+      font-size: 100px;
+      margin-bottom: 20px;
+      font-family: 'Courier New', Courier, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    .nav-button {
+      display: inline-block;
+      padding: 10px 20px;
+      background: #4caf50;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    .nav-button:hover {
+      background: #3a9e42;
+    }
+    .buttons-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin: 20px 0;
+  }
+  .image-button img {
+    width: 395px;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.2s ease;
+  }
+  .image-button img:hover {
+    transform: scale(1.05);
+  }
+  </style>
+</head>
+<body>
+  <h1>г. Киров               +7 (912) 827-06-33</h1>
+<a class="vk-button" href="https://vk.com/legocity4343" target="_blank">
+<img src="images/vk.jpg" style="width: 250px; height: 230px;;max-width: 100%; height: auto; display: block; margin: auto;"/></a>
+<div class="buttons-container">
+<a class="image-button" href="tovati/questi.html">
+    <img alt="Перейти" src="images/arenda.jpg"/>
+</a>
+<a class="image-button" href="tovati/packeti.html">
+    <img alt="Перейти" src="images/packeti.jpg"/>
+</a>
+<a class="image-button" href="tovati/animatori.html">
+    <img alt="Перейти" src="images/animatori.jpg"/>
+</a>
+<a class="image-button" href="tovati/shouprogram.html">
+    <img alt="Перейти" src="images/shouprogram.jpg"/>
+</a>
+<a class="image-button" href="index.html">
+  <img alt="Перейти" src="images/shouprogram.jpg"/>
+</a>
+</div>
+
+<style>
+.buttons-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+.image-button img {
+    width: 395px;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.2s ease;
+}
+.image-button img:hover {
+    transform: scale(1.05);
+}
+</style>
+</div>
+<h1 class="main-title">Шоу программы</h1>
+<div class="grid">
+<div class="card">
+<img alt="Пиньята" src="images/pinata.jpg"/>
+<div class="info">
+<div class="title">Пиньята</div>
+<div class="price">2 500 ₽ ⬇️</div>
+</div>
+<div class="description">🎉 Пиньята
+  Яркий финал праздника! Весело, неожиданно и с восторгом для детей и взрослых. Отличное завершение торжества!</div>
+</div>
+<div class="card">
+<img alt="Шаробум шоу" src="images/sharobum.jpg"/>
+<div class="info">
+<div class="title">Шаробум шоу</div>
+<div class="price">3 000 ₽ ⬇️</div>
+</div>
+<div class="description">🎈Вас ждут: воздушный салют, весёлые игры, дискотека с шариками и загадывание желаний! Веселье гарантировано!</div>
+</div>
+<div class="card">
+<img alt="Неоновое шоу" src="images/neon.jpg"/>
+<div class="info">
+<div class="title">Неоновое шоу</div>
+<div class="price">3 000 ₽ ⬇️</div>
+</div>
+<div class="description">💡Светящиеся ленточки, яркие спецэффекты и полное восхищение детей!
+  ⚠️ Доступно в Мультимедийном парке и в Юбилейном.</div>
+</div>
+<div class="card">
+<img alt="Поролоновое шоу" src="images/porolon.jpg"/>
+<div class="info">
+<div class="title">Поролоновое шоу</div>
+<div class="price">2 000 ₽ ⬇️</div>
+</div>
+<div class="description">🧱Горы мягких кубиков для строительства, веселья и крушений! Безопасно, креативно, активно — как любят дети!</div>
+</div>
+<div class="card">
+<img alt="Мастер-классы" src="images/master.jpg"/>
+<div class="info">
+<div class="title">Мастер-классы</div>
+<div class="price">3 000 ₽ ⬇️</div>
+</div>
+<div class="description"><p>🖐Выбор:</p>
+  <p>• Слаймы</p>
+  <p>• Поделки</p>
+  <p>• Сахарная вата</p>
+  <p>Дополнительно:</p>
+  <p>• Аквагрим, квесты, бьюти-бар</p>
+  <p>💰 От 3000₽ за 12 детей</p></div>
+</div>
+<div class="card">
+<img alt="Золотое шоу" src="images/gold.jpg"/>
+<div class="info">
+<div class="title">Золотое шоу</div>
+<div class="price">2 500 ₽ ⬇️</div>
+</div>
+<div class="description">✨Весёлое шоу с золото-розовой фольгой, танцами и весельем! Гости кидаются лентами, смеются и отрываются под музыку — праздник в огнях!</div>
+</div>
+<div class="card">
+<img alt="Лента-шоу" src="images/lenta.jpg"/>
+<div class="info">
+<div class="title">Лента-шоу</div>
+<div class="price">1 300 ₽ ⬇️</div>
+</div>
+<div class="description">🎀Яркое веселье без грязи и пыли! Танцы, смех и безудержное дурачество с лентами.</div>
+</div>
+<div class="card">
+<img alt="Серебряное шоу" src="images/silver.jpg"/>
+<div class="info">
+<div class="title">Серебряное шоу</div>
+<div class="price">2 500 ₽ ⬇️</div>
+</div>
+<div class="description">💫Серебряные ленты, музыка, танцы и настоящий вихрь радости! Весёлое и незабываемое зрелище для всех.
+  </div>
+</div>
+<div class="card">
+<img alt="Игрушки ручной работы" src="images/toys.jpg"/>
+<div class="info">
+<div class="title">Игрушки ручной работы</div>
+<div class="price">150 ₽ ⬇️</div>
+</div>
+<div class="description">🧸Уникальные подарки с душой! Милый и тёплый сюрприз на любой праздник. Цена зависит от размера.</div>
+</div>
+<div class="card">
+<img alt="Фотограф" src="images/photographer.jpg"/>
+<div class="info">
+<div class="title">Фотограф</div>
+<div class="price">2 500 ₽ ⬇️</div>
+</div>
+<div class="description"> 📸Можно заказать на 30 мин, 1 час или больше. Поможем выбрать лучшего специалиста!</div>
+</div>
+<div class="card">
+<img alt="Шоу мыльные пузыри" src="images/bubles.jpg"/>
+<div class="info">
+<div class="title">Мыльные пузыри</div>
+<div class="price">1 000 ₽ ⬇️</div>
+</div>
+  <div class="description">🔮Мир пузырей и магии! Детям и взрослым — всем понравится.
+    💬 Стоимость — у администратора.</div>
+</div>
+<div class="card">
+<img alt="Бьюти бар" src="images/beauty.jpg"/>
+<div class="info">
+<div class="title">Бьюти бар</div>
+<div class="price">3 000 ₽ ⬇️</div>
+</div>
+<div class="description">👑Превращаем девочек в принцесс: блёстки, макияж, стразы!
+  💰 До 10 девочек — 3000₽, далее +200₽/чел.</div>
+</div>
+</div>
+<script>
+    document.querySelectorAll('.card').forEach(card => {
+      card.addEventListener('click', () => {
+        const desc = card.querySelector('.description');
+        desc.style.display = desc.style.display === 'block' ? 'none' : 'block';
+      });
+    });
+  </script>
+</body>
+</html>

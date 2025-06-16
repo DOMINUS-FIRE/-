@@ -1,0 +1,253 @@
+
+<!DOCTYPE html>
+
+<html lang="ru">
+<head>
+<meta charset="utf-8"/>
+<title>Услуги</title>
+<style>
+    @media (max-width: 600px) {
+      .grid {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+     body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background: #fdfdfd;
+      width: 97%;
+      text-siz
+    }
+    .grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .card {
+      width: 100%;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      cursor: pointer;
+    }
+    .card img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+    .info {
+      padding: 10px;
+    }
+    .title {
+      color: #444;
+      margin: 5px 0;
+      font-size: 60px;
+    }
+    .price {
+      font-size: 70px;
+      font-weight: bold;
+    }
+    .description {
+      display: none;
+      padding: 10px;
+      color: #666;
+      background: #fafafa;
+      font-size: 70px;
+    }
+    .main-title {
+      text-align: center;
+      font-weight: bold;
+      font-size: 70px;
+      margin-bottom: 20px;
+    }
+    .vk-button {
+  position: fixed;
+  top: 20px;
+  right: 40px;
+  z-index: 1000;
+    }
+
+    .vk-button:hover {
+  background-color: #3b5d82;
+    }
+    .Lego-City {
+      text-align: center;
+      font-weight: bold;
+      font-size: 100px;
+      margin-bottom: 20px;
+      font-family: 'Courier New', Courier, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    .nav-button {
+      display: inline-block;
+      padding: 10px 20px;
+      background: #4caf50;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    .nav-button:hover {
+      background: #3a9e42;
+    }
+    .buttons-container {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin: 20px 0;
+    }
+    .image-button img {
+      width: 395px;
+      height: auto;
+      border-radius: 8px;
+      transition: transform 0.2s ease;
+    }
+    .image-button img:hover {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+<a class="vk-button" href="https://vk.com/legocity4343" target="_blank">
+<img src="images/vk.jpg" style="width: 250px; height: 230px;;max-width: 100%; height: auto; display: block; margin: auto;"/></a>
+<img src="images/glav.jpg" style="width: 1600px; height: 800px;;max-width: 100%; height: auto; display: block; margin: auto;"/>
+<div class="buttons-container">
+  <a class="image-button" href="tovati/questi.html">
+      <img alt="Перейти" src="images/arenda.jpg"/>
+  </a>
+  <a class="image-button" href="tovati/packeti.html">
+      <img alt="Перейти" src="images/packeti.jpg"/>
+  </a>
+  <a class="image-button" href="tovati/animatori.html">
+      <img alt="Перейти" src="images/animatori.jpg"/>
+  </a>
+  <a class="image-button" href="tovati/shouprogram.html">
+      <img alt="Перейти" src="images/shouprogram.jpg"/>
+  </a>
+</div>
+
+<style>
+  .buttons-container {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin: 20px 0;
+  }
+  .image-button img {
+      width: 395px;
+      height: auto;
+      border-radius: 8px;
+      transition: transform 0.2s ease;
+  }
+  .image-button img:hover {
+      transform: scale(1.05);
+  }
+</style>
+<h1 class="main-title">Аниматоры</h1>
+<div class="grid">
+<div class="card">
+<img src="images/pizhama.jpg" style=";max-width: 100%; height: auto; display: block; margin: auto;"/>
+<div class="info">
+<div class="title">ПИЖАМНАЯ ВЕЧЕРИНКА</div>
+<div class="price">4 000 ₽ ⬇️</div>
+</div>
+<div class="description">🎉Весёлое путешествие в мир снов с друзьями!
+  В программе: ведущий в кигуруми, квест, игры и танец.
+  Возраст: от 5 лет • Длительность: 1 час
+  Стоимость:
+  <p>4000₽ до 12 детей / 5000₽ от 13 детей</p>
+        </div>
+</div>
+<div class="card">
+<img src="images/pirati.jpg" style=";max-width: 100%; height: auto; display: block; margin: auto;"/>
+<div class="info">
+<div class="title">ТАЙНА СОКРОВИЩ ПИРАТА</div>
+<div class="price">4 000 ₽ ⬇️</div>
+</div>
+<div class="description">🏴‍☠️ Пиратский квест
+  Ищем сокровища с Пиратом!
+  В программе: задания, поиск клада, угадывание напитков.
+  Возраст: от 5 лет • Длительность: 1 час
+  Стоимость:
+  <p>4000₽ до 12 детей / 5000₽ от 13 детей</p>
+      </div>
+</div>
+<div class="card">
+<img src="images/medved.jpg" style=";max-width: 100%; height: auto; display: block; margin: auto;"/>
+<div class="info">
+<div class="title">РОСТОВАЯ КУКЛА "МИШКА"</div>
+<div class="price">3 000 ₽ ⬇️</div>
+</div>
+<div class="description">🧸 Мишка поздравит, обнимет, потанцует и сфотографируется.
+  Подходит для любых праздников!</div>
+</div>
+<div class="card">
+<img src="images/chenki.jpg" style=";max-width: 100%; height: auto; display: block; margin: auto;"/>
+<div class="info">
+<div class="title">АНИМАТОР</div>
+<div class="price">3 600 ₽ ⬇️</div>
+</div>
+<div class="description">⭐️Любимый герой проводит конкурсы, танцы, поздравления.
+  Подходит для всех мероприятий.
+  Вход со своим аниматором — 1000₽</div>
+</div>
+<div class="card">
+<img src="images/pratki.jpg" style=";max-width: 100%; height: auto; display: block; margin: auto;"/>
+<div class="info">
+<div class="title">ПРЯТКИ В ТЕМНОТЕ</div>
+<div class="price">4 000 ₽ ⬇️</div>
+</div>
+<div class="description">🌌Драйвовая игра с фонариками, поисками и охраной.
+  Возраст: от 5 лет 
+  <p>• Длительность: 1 час</p>
+  <p>4000₽ до 12 детей / 5000₽ от 13 детей</p></div>
+</div>
+<div class="card">
+<img src="images/mafia.jpg" style=";max-width: 100%; height: auto; display: block; margin: auto;"/>
+<div class="info">
+<div class="title">МАФИЯ</div>
+<div class="price">4 000 ₽ ⬇️</div>
+</div>
+<div class="description">🕵️Детективная командная игра: классическая и с ролями.
+  Возраст: от 8 лет 
+  <p>• Длительность: 1 час</p>
+  <p>4000₽ до 12 детей / 5000₽ от 13 детей</p></div>
+</div>
+<div class="card">
+<img src="images/vedushii.jpg" style=";max-width: 100%; height: auto; display: block; margin: auto;"/>
+<div class="info">
+<div class="title">ВЕДУЩИЙ</div>
+<div class="price">3 600 ₽ ⬇️</div>
+</div>
+<div class="description">
+  🎤Играет, развлекает и присматривает за детьми.
+  Обязателен от 5 детей.
+  Стоимость:
+  <p>Аниматор 1ч — 3500₽ / Ведущий 3ч — 3600₽</p>
+</div>
+</div>
+<div class="card">
+<img src="images/zayac.jpg" style=";max-width: 100%; height: auto; display: block; margin: auto;"/>
+<div class="info">
+<div class="title">РОСТОВАЯ КУКЛА "ЗАЙКА"</div>
+<div class="price">3 000 ₽ ⬇️</div>
+</div>
+<div class="description">🐰 Зайка для танцев, обнимашек и фото.
+  Подходит для любых мероприятий.</div>
+</div>
+</div>
+<script>
+    document.querySelectorAll('.card').forEach(card => {
+      card.addEventListener('click', () => {
+        const desc = card.querySelector('.description');
+        desc.style.display = desc.style.display === 'block' ? 'none' : 'block';
+      });
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,446 @@
+
+<!DOCTYPE html>
+
+<html lang="ru">
+<head>
+<meta charset="utf-8"/>
+<title>Услуги</title>
+<style>
+    @media (max-width: 600px) {
+      .grid {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+     body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background: #fdfdfd;
+      width: 97%;
+      text-siz
+    }
+  
+    .grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .card {
+      width: 100%;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      cursor: pointer;
+    }
+    .card img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+    .info {
+      padding: 10px;
+    }
+    .title {
+      color: #444;
+      margin: 5px 0;
+      font-size: 60px;
+    }
+    .price {
+      font-size: 70px;
+      font-weight: bold;
+    }
+    .description {
+      display: none;    
+      padding: 10px;
+      color: #666;
+      background: #fafafa;
+      font-size: 70px;
+    }
+    .main-title {
+      text-align: center;
+      font-weight: bold;
+      font-size: 70px;
+      margin-bottom: 20px;
+    }
+    .vk-button {
+  position: fixed;
+  top: 20px;
+  right: 40px;
+  z-index: 1000;
+    }
+
+    .vk-button:hover {
+  background-color: #3b5d82;
+    }
+    .Lego-City {
+      text-align: center;
+      font-weight: bold;
+      font-size: 100px;
+      margin-bottom: 20px;
+      font-family: 'Courier New', Courier, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    .nav-button {
+      display: inline-block;
+      padding: 10px 20px;
+      background: #4caf50;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    .nav-button:hover {
+      background: #3a9e42;
+    }
+    .slider {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  touch-action: pan-y;
+}
+
+.slide {
+  display: none;
+  width: 100%;
+  border-radius: 6px;
+  user-select: none;
+  height: auto;
+  object-fit: cover;
+  display: none;
+}
+
+.slide.active {
+  display: block;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 30px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 50%;
+  z-index: 1;
+  user-select: none;
+}
+
+.arrow.left {
+  left: 10px;
+}
+
+.arrow.right {
+  right: 10px;
+}
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.9);
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.modal img {
+  max-width: 90%;
+  max-height: 80%;
+  object-fit: contain;
+}
+
+.modal .close {
+  position: absolute;
+  top: 540px;
+  right: 180px;
+  font-size: 32px;
+  color: white;
+  cursor: pointer;
+}
+
+.modal .arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 40px;
+  color: white;
+  cursor: pointer;
+  user-select: none;
+  background: transparent;
+}
+
+.modal .arrow.left { left: 30px; }
+.modal .arrow.right { right: 30px; }
+.buttons-container {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin: 20px 0;
+    }
+    .image-button img {
+      width: 395px;
+      height: auto;
+      border-radius: 8px;
+      transition: transform 0.2s ease;
+    }
+    .image-button img:hover {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+<a class="vk-button" href="https://vk.com/legocity4343" target="_blank">
+<img src="images/vk.jpg" style="width: 250px; height: 230px;;max-width: 100%; height: auto; display: block; margin: auto;"/></a>
+<img src="images/glav.jpg" style="width: 1600px; height: 800px;;max-width: 100%; height: auto; display: block; margin: auto;"/>
+<div class="buttons-container">
+  <a class="image-button" href="tovati/questi.html">
+      <img alt="Перейти" src="images/arenda.jpg"/>
+  </a>
+  <a class="image-button" href="tovati/packeti.html">
+      <img alt="Перейти" src="images/packeti.jpg"/>
+  </a>
+  <a class="image-button" href="tovati/animatori.html">
+      <img alt="Перейти" src="images/animatori.jpg"/>
+  </a>
+  <a class="image-button" href="tovati/shouprogram.html">
+      <img alt="Перейти" src="images/shouprogram.jpg"/>
+  </a>
+</div>
+
+<style>
+  .buttons-container {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin: 20px 0;
+  }
+  .image-button img {
+      width: 395px;
+      height: auto;
+      border-radius: 8px;
+      transition: transform 0.2s ease;
+  }
+  .image-button img:hover {
+      transform: scale(1.05);
+  }
+</style>
+<h1 class="main-title">Готовые пакеты</h1>
+<div class="grid">
+<div class="card">
+<img src="images/secret-shou.jpg"/>
+<div class="info">
+<div class="title">МУЛЬТИ ПАРК</div>
+<div class="price">21 000 ₽ ⬇️</div>
+</div>
+<div class="description">
+<p>Готовое спецпредложение для праздника на 3 часа</p>
+<div class="slider">
+<span class="arrow left">←</span>
+<img class="slide acive" data-group="secret" height="500px" src="images/6/secret-shou-ceni.jpg"/>
+<span class="arrow right">→</span>
+</div>
+</div>
+</div>
+<div class="card">
+<img src="images/bezumie.jpg"/>
+<div class="info">
+<div class="title">МУЛЬТИ ПАРК</div>
+<div class="price">16 000 ₽ ⬇️</div>
+</div>
+<div class="description">
+<p>Готовое спецпредложение для праздника на 3 часа</p>
+<div class="slider">
+<span class="arrow left">←</span>
+<img class="slide acive" data-group="bezumie" src="images/7/bezumie-ceni.jpg"/>
+<span class="arrow right">→</span>
+</div>
+</div>
+</div>
+<div class="card">
+<img src="images/lego.jpg"/>
+<div class="info">
+<div class="title">НОВОВЯТСК</div>
+<div class="price">20 200 ₽ ⬇️</div>
+</div>
+<div class="description">
+<p>Готовое спецпредложение для праздника на 3 часа</p>
+</div>
+</div>
+<div class="card">
+<img src="images/udacha.jpg"/>
+<div class="info">
+<div class="title">НОВОВЯТСК</div>
+<div class="price">15 200 ₽ ⬇️</div>
+</div>
+<div class="description">
+<p>Готовое спецпредложение для праздника на 3 часа</p>
+</div>
+</div>
+<div class="card">
+<img src="images/lego1.jpg"/>
+<div class="info">
+<div class="title">ЮБИЛЕЙНЫЙ, УПИТА 1 ЭТАЖ</div>
+<div class="price">20 000 ₽ ⬇️</div>
+</div>
+<div class="description">
+<p>Готовое спецпредложение для праздника на 3 часа</p>
+<div class="slider">
+<span class="arrow left">←</span>
+<img class="slide acive" data-group="lego" src="images/8/lego1-ceni.jpg"/>
+<span class="arrow right">→</span>
+</div>
+</div>
+</div>
+<div class="card">
+<img src="images/udacha1.jpg"/>
+<div class="info">
+<div class="title">ЮБИЛЕЙНЫЙ, УПИТА 1 ЭТАЖ</div>
+<div class="price">15 000 ₽ ⬇️</div>
+</div>
+<div class="description">
+<p>Готовое спецпредложение для праздника на 3 часа</p>
+<div class="slider">
+<span class="arrow left">←</span>
+<img class="slide acive" data-group="udacha" src="images/9/udacha1-ceni.jpg"/>
+<span class="arrow right">→</span>
+</div>
+</div>
+</div>
+<div class="card">
+<img src="images/vipusk.jpg"/>
+<div class="info">
+<div class="title">ВЫПУСКНЫЕ 2025</div>
+<div class="price">40 000 ₽ ⬇️</div>
+</div>
+<div class="description">
+<p>Готовое спецпредложение для праздника на 3 часа</p>
+<div class="slider">
+<span class="arrow left">←</span>
+<img class="slide acive" data-group="vipusk" src="images/10/vipusk-ceni1.jpg"/>
+<img class="slide acive" data-group="vipusk" src="images/10/vipusk-ceni2.jpg"/>
+<img class="slide acive" data-group="vipusk" src="images/10/vipusk-ceni3.jpg"/>
+<span class="arrow right">→</span>
+</div>
+</div>
+</div>
+<div class="modal" id="modal">
+<span class="close" id="closeBtn">❌</span>
+<span class="arrow left" id="modalLeft">←</span>
+<img id="modalImage" src=""/>
+<span class="arrow right" id="modalRight">→</span>
+</div>
+</div>
+<script>
+    document.querySelectorAll('.card').forEach(card => {
+      const description = card.querySelector('.description');
+      const slides = card.querySelectorAll('.slide');
+      const slider = card.querySelector('.slider');
+      const leftArrow = card.querySelector('.arrow.left');
+      const rightArrow = card.querySelector('.arrow.right');
+      let currentIndex = 0;
+    
+      // Показ/скрытие описания
+      card.addEventListener('click', (e) => {
+        if (!e.target.classList.contains('slide') &&
+            !e.target.classList.contains('arrow')) {
+          description.style.display = description.style.display === 'block' ? 'none' : 'block';
+          showSlide(currentIndex);
+        }
+      });
+    
+      // Отдельный просмотр изображения
+      slides.forEach((slide, i) => {
+        slide.addEventListener('click', (e) => {
+          e.stopPropagation();
+          openModal(slides, i);
+        });
+      });
+    
+      // Стрелки
+      [leftArrow, rightArrow].forEach(arrow => {
+        if (!arrow) return;
+        arrow.addEventListener('click', (e) => {
+          e.stopPropagation();
+          if (arrow.classList.contains('left')) {
+            currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+          } else {
+            currentIndex = (currentIndex + 1) % slides.length;
+          }
+          showSlide(currentIndex);
+        });
+      });
+    
+      // Свайпы
+      let startX = 0;
+      if (slider) {
+        slider.addEventListener('touchstart', e => startX = e.touches[0].clientX);
+        slider.addEventListener('touchend', e => {
+          const endX = e.changedTouches[0].clientX;
+          if (endX - startX > 30) {
+            currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+          } else if (startX - endX > 30) {
+            currentIndex = (currentIndex + 1) % slides.length;
+          }
+          showSlide(currentIndex);
+        });
+      }
+    
+      function showSlide(index) {
+        slides.forEach((slide, i) => {
+          slide.classList.toggle('active', i === index);
+        });
+      }
+    
+      showSlide(currentIndex);
+    });
+    
+    // Модальное окно
+    const modal = document.getElementById('modal');
+    const modalImg = document.getElementById('modalImage');
+    const closeBtn = document.getElementById('closeBtn');
+    const modalLeft = document.getElementById('modalLeft');
+    const modalRight = document.getElementById('modalRight');
+    let modalSlides = [];
+    let modalIndex = 0;
+    
+    function openModal(slides, index) {
+      modalSlides = Array.from(slides);
+      modalIndex = index;
+      modal.style.display = 'flex';
+      modalImg.src = modalSlides[modalIndex].src;
+    }
+    
+    closeBtn.onclick = () => modal.style.display = 'none';
+    
+    modalLeft.onclick = () => {
+      modalIndex = (modalIndex - 1 + modalSlides.length) % modalSlides.length;
+      modalImg.src = modalSlides[modalIndex].src;
+    };
+    modalRight.onclick = () => {
+      modalIndex = (modalIndex + 1) % modalSlides.length;
+      modalImg.src = modalSlides[modalIndex].src;
+    };
+    
+    let startX = 0;
+    modal.addEventListener('touchstart', e => startX = e.touches[0].clientX);
+    modal.addEventListener('touchend', e => {
+      const endX = e.changedTouches[0].clientX;
+      if (endX - startX > 30) modalLeft.onclick();
+      else if (startX - endX > 30) modalRight.onclick();
+    });
+    </script>
+<div class="modal" id="modal">
+<span class="close" id="closeBtn">✖️</span>
+<span class="arrow left" id="modalLeft">←</span>
+<img id="modalImage" src=""/>
+<span class="arrow right" id="modalRight">→</span>
+</div>
+</body>
+</html>
